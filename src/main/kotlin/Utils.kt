@@ -6,7 +6,7 @@ import kotlin.io.path.readLines
 /**
  * Reads lines from the given input txt file.
  */
-fun readInput(name: String) = Path("src/main/kotlin/$name.txt").readLines()
+private fun readInput(name: String) = Path("src/main/kotlin/$name.txt").readLines()
 
 fun readInput(day: Int) = readInput("Day" + day.toString().padStart(2, '0'))
 fun readTestInput(day: Int) = readInput("Day" + day.toString().padStart(2, '0') + "_test")

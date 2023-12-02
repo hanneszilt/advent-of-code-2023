@@ -62,7 +62,7 @@ fun main() {
     part2.println()
     check(part2 == 281)
 
-    val input = readInput("Day01")
+    val input = readInput(1)
     Day01.part1(input).println()
     Day01.part2(input).println()
 }
