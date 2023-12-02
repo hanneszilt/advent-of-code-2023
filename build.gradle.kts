@@ -2,10 +2,13 @@ plugins {
     kotlin("jvm") version "1.9.20"
 }
 
-sourceSets {
-    main {
-        kotlin.srcDir("src")
-    }
+dependencies {
+    testImplementation(kotlin("test"))
+    testImplementation("io.kotest:kotest-assertions-core-jvm:5.8.0")
+}
+
+tasks.test {
+    useJUnitPlatform()
 }
 
 tasks {
